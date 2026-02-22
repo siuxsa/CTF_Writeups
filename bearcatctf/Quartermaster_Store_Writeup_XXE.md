@@ -69,7 +69,7 @@ Because the backend XML parser accepts attacker-controlled XML, I tested whether
 
 After sending the payload to /review (Burp Repeater), the response message contained the flag.
 
-![alt text](https://cdn.twocontinents.com/cdn-cgi/image/width=1920/https://cdn.twocontinents.com/top_rides_at_img_worlds_of_adventure_spiderman_4_145192c8a4.jpg)
+![alt text](https://raw.githubusercontent.com/siuxsa/CTF_Writeups/refs/heads/main/bearcatctf/image/Screenshot%202026-02-22%20010943.png)
 
 **Why the flag is exposed in the response**
 
