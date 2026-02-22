@@ -69,6 +69,8 @@ Because the backend XML parser accepts attacker-controlled XML, I tested whether
 
 After sending the payload to /review (Burp Repeater), the response message contained the flag.
 
+![alt text](https://cdn.twocontinents.com/cdn-cgi/image/width=1920/https://cdn.twocontinents.com/top_rides_at_img_worlds_of_adventure_spiderman_4_145192c8a4.jpg)
+
 **Why the flag is exposed in the response**
 
 The application reflects the \<product\> value into a pirate-style message when the product is not recognized as a valid shop item (e.g., “Ye didn't buy any {product} here matey\!”). By setting \<product\> to \&xxe;, the reflected string becomes the contents of /flag.txt.
