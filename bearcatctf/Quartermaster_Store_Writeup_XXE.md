@@ -10,8 +10,6 @@ Target: [http://chal.bearcatctf.io:43363/](http://chal.bearcatctf.io:43363/)
 
 Quartermaster Store is a pirate-themed shop web challenge. The flag is obtained by exploiting an XML External Entity (XXE) issue in the authenticated review submission feature (/review), allowing local file disclosure of /flag.txt.
 
-**Flag: ```BCCTF{N0_H0nor_AmonG_Th3vEs}```**
-
 **2\. Application Exploration :** I proxied all traffic through Burp Suite and used Target → Site map and Proxy → HTTP history to enumerate reachable endpoints and understand client/server interactions. The application behaves differently before and after authentication.
 
 **Figure 1 — Unauthenticated homepage (storefront)**
@@ -75,11 +73,8 @@ After sending the payload to /review (Burp Repeater), the response message conta
 
 The application reflects the \<product\> value into a pirate-style message when the product is not recognized as a valid shop item (e.g., “Ye didn't buy any {product} here matey\!”). By setting \<product\> to \&xxe;, the reflected string becomes the contents of /flag.txt.
 
-**Flag: ```BCCTF{N0\_H0nor\_AmonG\_Th3vEs}```**
+**Flag: ```BCCTF{N0_H0nor_AmonG_Th3vEs}```**
 
-Plunder JS: http://chal.bearcatctf.io:43363/static/plunder_game.js
-
-**7\. Remediation (Defender Notes)**
 
 Disable external entity resolution (DTD) in the XML parser or switch to a hardened XML parser configuration.
 
