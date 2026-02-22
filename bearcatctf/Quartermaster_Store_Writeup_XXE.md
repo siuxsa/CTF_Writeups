@@ -77,8 +77,7 @@ The application reflects the \<product\> value into a pirate-style message when 
 
 **Flag: ```BCCTF{N0_H0nor_AmonG_Th3vEs}```**
 
-
-Disable external entity resolution (DTD) in the XML parser or switch to a hardened XML parser configuration.
-
-Prefer JSON APIs for untrusted input; if XML is required, enforce strict schema validation and disable DOCTYPE.
+*Remediation (Defender Notes)*
+ - Disable external entity resolution (DTD) in the XML parser or switch to a hardened XML parser configuration.
+ - Prefer JSON APIs for untrusted input; if XML is required, enforce strict schema validation and disable DOCTYPE.
 
