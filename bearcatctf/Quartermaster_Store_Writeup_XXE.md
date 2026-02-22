@@ -14,23 +14,23 @@ Quartermaster Store is a pirate-themed shop web challenge. The flag is obtained 
 
 **Figure 1 — Unauthenticated homepage (storefront)**
 
-![alt text](https://cdn.twocontinents.com/cdn-cgi/image/width=1920/https://cdn.twocontinents.com/top_rides_at_img_worlds_of_adventure_spiderman_4_145192c8a4.jpg)
+![alt text](https://raw.githubusercontent.com/siuxsa/CTF_Writeups/refs/heads/main/bearcatctf/image/Screenshot%202026-02-22%20154611.png)
 
 **Figure 2 — Login page**
 
-![alt text](https://cdn.twocontinents.com/cdn-cgi/image/width=1920/https://cdn.twocontinents.com/top_rides_at_img_worlds_of_adventure_spiderman_4_145192c8a4.jpg)
+![alt text](https://raw.githubusercontent.com/siuxsa/CTF_Writeups/refs/heads/main/bearcatctf/image/Screenshot%202026-02-22%20154653.png)
 
 **Figure 3 — Register page**
 
-![alt text](https://cdn.twocontinents.com/cdn-cgi/image/width=1920/https://cdn.twocontinents.com/top_rides_at_img_worlds_of_adventure_spiderman_4_145192c8a4.jpg)
+![alt text](https://raw.githubusercontent.com/siuxsa/CTF_Writeups/refs/heads/main/bearcatctf/image/Screenshot%202026-02-22%20154727.png)
 
 **Figure 4 — Review page (post-login feature)**
 
-![alt text](https://cdn.twocontinents.com/cdn-cgi/image/width=1920/https://cdn.twocontinents.com/top_rides_at_img_worlds_of_adventure_spiderman_4_145192c8a4.jpg)
+![alt text](https://raw.githubusercontent.com/siuxsa/CTF_Writeups/refs/heads/main/bearcatctf/image/Screenshot%202026-02-22%20155340.png)
 
 **Figure 5 — Plunder minigame (post-login feature)**
 
-![alt text](https://cdn.twocontinents.com/cdn-cgi/image/width=1920/https://cdn.twocontinents.com/top_rides_at_img_worlds_of_adventure_spiderman_4_145192c8a4.jpg)
+![alt text](https://raw.githubusercontent.com/siuxsa/CTF_Writeups/refs/heads/main/bearcatctf/image/Screenshot%202026-02-22%20155216.png)
 
 I also reviewed the Plunder minigame. The client posts a JSON body {score: finalScore} to /plunder . This suggests the score might be tamperable for farming doubloons, but it is not required for flag retrieval.
 
@@ -44,7 +44,7 @@ Authenticated (after register \+ login): additional navbar actions appear, inclu
 
 The review form submission does not send JSON or URL-encoded parameters. Instead, the frontend constructs an XML document and posts it to /review with Content-Type: application/xml. 
 
-![alt text](https://cdn.twocontinents.com/cdn-cgi/image/width=1920/https://cdn.twocontinents.com/top_rides_at_img_worlds_of_adventure_spiderman_4_145192c8a4.jpg)
+![alt text](https://raw.githubusercontent.com/siuxsa/CTF_Writeups/refs/heads/main/bearcatctf/image/Screenshot%202026-02-22%20155454.png)
 
 **4\. Exploitation: XXE → Local File Disclosure**
 
