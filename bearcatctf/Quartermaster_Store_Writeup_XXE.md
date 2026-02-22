@@ -4,7 +4,7 @@ Technique: XXE (XML External Entity) in /review
 
 Target: [http://chal.bearcatctf.io:43363/](http://chal.bearcatctf.io:43363/)
 
-![alt text](https://cdn.twocontinents.com/cdn-cgi/image/width=1920/https://cdn.twocontinents.com/top_rides_at_img_worlds_of_adventure_spiderman_4_145192c8a4.jpg)
+![alt text](https://raw.githubusercontent.com/siuxsa/CTF_Writeups/refs/heads/main/bearcatctf/image/Screenshot%202026-02-22%20154439.png)
 
 **1\. Executive Summary**
 
