@@ -5,10 +5,8 @@
 **URL:** http://challenge.utctf.live:5888  
 **Event:** UTCTF  
 **Author:** Elie / Razboy20  
-
+![](images/Screenshot%202026-03-14%20032501.png)
 ---
-
-## TL;DR
 
 The challenge pretends to be a global queue / patience challenge, but the real vulnerability is an **arbitrary file read via path traversal** in:
 
@@ -162,6 +160,8 @@ if __name__ == "__main__":
     )
     print(raw.decode())
 
+```
+
 The script uses:
 
 XOR
@@ -177,7 +177,6 @@ python3 main.py.bak
 
 Running the script prints:
 
-utflag{y0u_e1th3r_w@1t_yr_turn_0r_cut_1n_l1ne}
 
 Final Flag
 utflag{y0u_e1th3r_w@1t_yr_turn_0r_cut_1n_l1ne}
