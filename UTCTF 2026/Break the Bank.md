@@ -174,8 +174,6 @@ Meaning:
 
   So we must forge   JWE.
 
-![](/images/Screenshot%202026-03-13%20224200.png)
-
 ```
 from jwcrypto import jwk, jwe
 
@@ -217,6 +215,7 @@ token.add_recipient(key)
 
 print(token.serialize(compact=True))
 ```
+![](images/Screenshot%202026-03-13%20224200.png)
 
 ## **Step 8 — Send Token to Server**
 
