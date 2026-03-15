@@ -5,6 +5,7 @@
 **URL:** http://challenge.utctf.live:5888  
 **Event:** UTCTF  
 **Author:** Elie / Razboy20  
+
 ![](images/Screenshot%202026-03-14%20032501.png)
 ---
 
@@ -41,7 +42,7 @@ Opening the challenge shows a **Flag Dispenser UI** with rules saying:
 
 This suggests the challenge is about **patience / queue logic**, but this is actually misdirection.
 
-![Flag Dispenser UI](IMAGE_URL_HERE)
+![Flag Dispenser UI](images/Screenshot%202026-03-14%20032528.png)
 
 ---
 
@@ -74,7 +75,7 @@ f=flag.txt
 
 The server is reading a file path provided by the client.
 
-![Source Code](IMAGE_URL_HERE)
+![Source Code](images/Screenshot%202026-03-14%20032651.png)
 
 ---
 
@@ -104,7 +105,6 @@ This suggests:
 - weak validation
 - possible backup file exposure
 
-![Traversal Test](IMAGE_URL_HERE)
 
 ---
 
@@ -126,7 +126,7 @@ So we try:
 
 Success — returns Python source code.
 
-![Backup File](IMAGE_URL_HERE)
+![Backup File](images/Screenshot%202026-03-14%20032749.png)
 
 ---
 
@@ -176,7 +176,7 @@ python3 main.py.bak
 6. Flag recovery
 
 Running the script prints:
-
+![Traversal Test](images/Screenshot%202026-03-14%20032845.png)
 
 Final Flag
 utflag{y0u_e1th3r_w@1t_yr_turn_0r_cut_1n_l1ne}
