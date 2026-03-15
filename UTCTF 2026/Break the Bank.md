@@ -176,6 +176,7 @@ Meaning:
 
 ![](/images/Screenshot%202026-03-13%20224200.png)
 
+```
 from jwcrypto import jwk, jwe
 
 import json
@@ -215,6 +216,7 @@ token = jwe.JWE(
 token.add_recipient(key)
 
 print(token.serialize(compact=True))
+```
 
 ## **Step 8 — Send Token to Server**
 
