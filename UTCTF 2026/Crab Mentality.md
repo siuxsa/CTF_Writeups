@@ -52,6 +52,7 @@ Viewing page source shows the front-end makes requests to:
 
 
 /getFlag?f=flag.txt
+
 /status
 
 
