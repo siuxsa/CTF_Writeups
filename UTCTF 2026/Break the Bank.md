@@ -54,7 +54,7 @@ In the footer we found:
 
   /resources/FNSB\_InternetBanking\_Guide.pdf
 
-![][image3]
+![](images/Screenshot%202026-03-13%20221606.png)
 
 Download it.
 
