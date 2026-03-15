@@ -1,4 +1,4 @@
-![img][images/Screenshot%202026-03-13%20221531.png]
+![img](images/Screenshot%202026-03-13%20221531.png)
 
 ## Break the Bank
 
@@ -32,7 +32,7 @@ When logging in, the request sends JSON to:
 
 POST /login
 
-![img](images/Screenshot%202026-03-13%20221531.png)
+![img](images/Screenshot%202026-03-13%20221547.png)
 
 We also tested:
 
